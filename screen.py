@@ -14,12 +14,12 @@ import time
 #     return url
 
 def generateUrls():
-    mainurl = 'https://finviz.com/screener.ashx?v=152&ft=4&o=-marketcap&c=0,1,3,4,5,6,7,9,11,13,16,17,27,33,34,37,51,67,65,66'
+    mainurl = 'https://finviz.com/screener.ashx?v=152&ft=4&o=-marketcap&ar=180&c=0,1,3,4,5,6,7,9,11,13,16,17,27,33,34,37,51,67,65,66'
 
     url_list = [mainurl]
 
     for i in range(0,9):
-        new_url = 'https://finviz.com/screener.ashx?v=152&ft=4&o=-marketcap&r=' + str(((i*20) + 21)) + '&c=0,1,3,4,5,6,7,9,11,13,16,17,27,33,34,37,51,67,65,66'
+        new_url = 'https://finviz.com/screener.ashx?v=152&ft=4&o=-marketcap&r=' + str(((i*20) + 21)) + '&ar=180&c=0,1,3,4,5,6,7,9,11,13,16,17,27,33,34,37,51,67,65,66'
         url_list.append(new_url)
     
     return url_list
