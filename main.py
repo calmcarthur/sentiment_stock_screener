@@ -34,3 +34,5 @@ if __name__ == "__main__":
     result = pd.concat([df, sentiment_values['Sentiment']], axis=1)
 
     unique_key = loadDatabase(result.to_json(orient='index'))
+
+    print(unique_key)

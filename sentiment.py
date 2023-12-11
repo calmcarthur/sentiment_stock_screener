@@ -31,7 +31,7 @@ def getTickerNewsTablesList(tickers):
             news_table = html.find(id='news-table')
             news_tables[x] = news_table
 
-            time.sleep(0.1)   
+            time.sleep(0.1)
 
     except KeyError:
         pass
