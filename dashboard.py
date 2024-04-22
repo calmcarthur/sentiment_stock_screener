@@ -33,10 +33,9 @@ if __name__ == "__main__":
     df = fetchTop()
     data_load_state.text("Done")
 
-    st.subheader('The Data')
-    st.write(df)
-
-    print(df)
+    if st.checkbox('Show The Data'):
+        st.subheader('The Data')
+        st.write(df)
 
 
     
